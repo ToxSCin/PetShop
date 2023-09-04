@@ -35,6 +35,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblVoltar2 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -103,12 +106,35 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "Esqueci a senha";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PetShop.Properties.Resources.Captura_de_tela_2023_08_29_141012;
+            this.pictureBox2.Location = new System.Drawing.Point(9, 8);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(49, 46);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // lblVoltar2
+            // 
+            this.lblVoltar2.AutoSize = true;
+            this.lblVoltar2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVoltar2.Location = new System.Drawing.Point(64, 23);
+            this.lblVoltar2.Name = "lblVoltar2";
+            this.lblVoltar2.Size = new System.Drawing.Size(65, 22);
+            this.lblVoltar2.TabIndex = 10;
+            this.lblVoltar2.Text = "Voltar";
+            this.lblVoltar2.Click += new System.EventHandler(this.lblVoltar2_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(525, 450);
+            this.Controls.Add(this.lblVoltar2);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
@@ -121,6 +147,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +162,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblVoltar;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblVoltar2;
     }
 }

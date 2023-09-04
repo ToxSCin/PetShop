@@ -40,15 +40,17 @@ namespace PetShop
 
         private void button1_Click(object sender, EventArgs e)
         {
+            // Feche o Form1
+            this.Hide();
+            Form1 form1 = new Form1();
+            form1.Close();
+
             Form2 form2 = new Form2();
 
             // Exiba o Form2
             form2.Show();
 
-            // Feche o Form1
-            this.Hide();
-            Form1 form1 = new Form1();
-            form1.Close();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -88,6 +90,11 @@ namespace PetShop
             this.Hide();
             Form2 form2 = new Form2();
             form2.Close();
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
 
         }
     }

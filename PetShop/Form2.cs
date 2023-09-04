@@ -17,7 +17,7 @@ namespace PetShop
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void ConfigureControls()
@@ -60,5 +60,23 @@ namespace PetShop
             int nWidthEllipse,
             int nHeightEllipse
         );
+
+        
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblVoltar2_Click(object sender, EventArgs e)
+        {
+            Form1 form1 = new Form1();
+            form1.Show();
+
+            Form2 form2 = new Form2();
+            form2.Close();
+
+            
+        }
     }
 }
