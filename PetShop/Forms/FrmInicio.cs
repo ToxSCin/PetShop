@@ -1,21 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PetShop
+namespace PetShop.Forms
 {
-    public partial class Form1 : Form
+    public partial class FrmInicio : Form
     {
-        public Form1()
+        public FrmInicio()
         {
             InitializeComponent();
 
             // Configuração para o button1
-            ConfigureButton(button1);
+            ConfigureButton(BtnFazerLogin);
 
             // Configuração para o button2
-            ConfigureButton(button2);
+            ConfigureButton(BtnMeCadastrar);
         }
 
         private void ConfigureButton(Button button)
@@ -38,64 +44,33 @@ namespace PetShop
             int nHeightEllipse
         );
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnFazerLogin_Click(object sender, EventArgs e)
         {
             // Feche o Form1
             this.Hide();
-            Form1 form1 = new Form1();
-            form1.Close();
+            FrmInicio frmInicio = new FrmInicio();
+            frmInicio.Close();
 
-            Form2 form2 = new Form2();
+            FrmLogin frmLogin = new FrmLogin();
 
             // Exiba o Form2
-            form2.Show();
-
-            
+            frmLogin.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void BtnMeCadastrar_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
-            form3.Show();
+            FrmCadastrar frmCadastrar = new FrmCadastrar();
+            frmCadastrar.Show();
 
 
             this.Hide();
-            Form2 form2 = new Form2();
-            form2.Close();
-
-
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Close();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
+        private void LblFechar_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            Form3 form3 = new Form3();
-            form3.Show();
-
-
-            this.Hide();
-            Form2 form2 = new Form2();
-            form2.Close();
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

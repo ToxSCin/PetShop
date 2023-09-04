@@ -1,13 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PetShop
+namespace PetShop.Forms
 {
-    public partial class Form2 : Form
+    public partial class FrmLogin : Form
     {
-        public Form2()
+        public FrmLogin()
         {
             InitializeComponent();
 
@@ -15,15 +21,10 @@ namespace PetShop
             ConfigureControls();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void ConfigureControls()
         {
             // Configurar o botão
-            ConfigureButton(button1);
+            ConfigureButton(BtnEntrar);
 
             // Configurar as caixas de texto
             ConfigureRoundedTextBox(textBox1);
@@ -61,22 +62,23 @@ namespace PetShop
             int nHeightEllipse
         );
 
-        
-
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void FrmLogin_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void lblVoltar2_Click(object sender, EventArgs e)
+        private void LblVoltar_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
-            form1.Show();
+            FrmInicio frmInicio = new FrmInicio();
+            frmInicio.Show();
 
-            Form2 form2 = new Form2();
-            form2.Close();
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Close();
+        }
 
-            
+        private void BtnEntrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

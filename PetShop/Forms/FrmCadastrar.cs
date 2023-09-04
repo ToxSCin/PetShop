@@ -1,14 +1,19 @@
 ﻿using System;
-using System.Diagnostics.Eventing.Reader;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PetShop
+namespace PetShop.Forms
 {
-    public partial class Form3 : Form
+    public partial class FrmCadastrar : Form
     {
-        public Form3()
+        public FrmCadastrar()
         {
             InitializeComponent();
 
@@ -16,15 +21,10 @@ namespace PetShop
             ConfigureControls();
         }
 
-        private void Form3_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void ConfigureControls()
         {
             // Configurar o botão
-            ConfigureButton(button1);
+            ConfigureButton(BtnEntrar);
 
             // Configurar as caixas de texto
             ConfigureRoundedTextBox(textBox1);
@@ -63,9 +63,14 @@ namespace PetShop
             int nHeightEllipse
         );
 
-        private void button1_Click(object sender, EventArgs e)
+        private void lblVoltar_Click(object sender, EventArgs e)
         {
-            //pablo
+
+        }
+
+        private void BtnEntrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
