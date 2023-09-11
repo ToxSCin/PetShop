@@ -156,6 +156,7 @@
             this.Name = "FrmCadastrar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmCadastrar";
+            this.Load += new System.EventHandler(this.FrmCadastrar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

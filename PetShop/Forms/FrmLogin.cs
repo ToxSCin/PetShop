@@ -71,7 +71,7 @@ namespace PetShop.Forms
         {
             FrmInicio frmInicio = new FrmInicio();
             frmInicio.Show();
-
+            this.Hide();
             FrmLogin frmLogin = new FrmLogin();
             frmLogin.Close();
         }

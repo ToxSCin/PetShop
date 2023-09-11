@@ -65,10 +65,19 @@ namespace PetShop.Forms
 
         private void lblVoltar_Click(object sender, EventArgs e)
         {
-
+            FrmInicio frmInicio = new FrmInicio();
+            frmInicio.Show();
+            this.Hide();
+            FrmCadastrar frmCadastrar = new FrmCadastrar();
+            frmCadastrar.Close();
         }
 
         private void BtnEntrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmCadastrar_Load(object sender, EventArgs e)
         {
 
         }
