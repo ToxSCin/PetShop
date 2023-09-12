@@ -13,6 +13,7 @@ namespace PetShop.Forms
 {
     public partial class FrmLogin : Form
     {
+        
         public FrmLogin()
         {
             InitializeComponent();
@@ -78,7 +79,11 @@ namespace PetShop.Forms
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
-
+            CadastroDeClientes frmCadastroDeClientes = new CadastroDeClientes();
+            frmCadastroDeClientes.Show();
+            this.Hide();
+            FrmLogin frmLogin = new FrmLogin();
+            frmLogin.Close();
         }
     }
 }
