@@ -57,7 +57,7 @@
             this.BtnMeCadastrar.Location = new System.Drawing.Point(319, 308);
             this.BtnMeCadastrar.Name = "BtnMeCadastrar";
             this.BtnMeCadastrar.Size = new System.Drawing.Size(151, 40);
-            this.BtnMeCadastrar.TabIndex = 13;
+            this.BtnMeCadastrar.TabIndex = 1;
             this.BtnMeCadastrar.Text = "Me Cadastrar";
             this.BtnMeCadastrar.UseVisualStyleBackColor = true;
             this.BtnMeCadastrar.Click += new System.EventHandler(this.BtnMeCadastrar_Click);
@@ -68,7 +68,7 @@
             this.BtnFazerLogin.Location = new System.Drawing.Point(95, 308);
             this.BtnFazerLogin.Name = "BtnFazerLogin";
             this.BtnFazerLogin.Size = new System.Drawing.Size(143, 40);
-            this.BtnFazerLogin.TabIndex = 12;
+            this.BtnFazerLogin.TabIndex = 2;
             this.BtnFazerLogin.Text = "Fazer Login";
             this.BtnFazerLogin.UseVisualStyleBackColor = true;
             this.BtnFazerLogin.Click += new System.EventHandler(this.BtnFazerLogin_Click);

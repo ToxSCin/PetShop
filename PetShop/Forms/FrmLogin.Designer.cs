@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.LblVoltar = new System.Windows.Forms.Label();
-            this.LblEsqueciSenha = new System.Windows.Forms.Label();
             this.BtnEntrar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtSenha = new System.Windows.Forms.TextBox();
+            this.TxtUsuario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.BtnEsqueciSenha = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,23 +51,13 @@
             this.LblVoltar.Text = "Voltar";
             this.LblVoltar.Click += new System.EventHandler(this.LblVoltar_Click);
             // 
-            // LblEsqueciSenha
-            // 
-            this.LblEsqueciSenha.AutoSize = true;
-            this.LblEsqueciSenha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEsqueciSenha.Location = new System.Drawing.Point(165, 379);
-            this.LblEsqueciSenha.Name = "LblEsqueciSenha";
-            this.LblEsqueciSenha.Size = new System.Drawing.Size(200, 28);
-            this.LblEsqueciSenha.TabIndex = 17;
-            this.LblEsqueciSenha.Text = "Esqueci a senha";
-            // 
             // BtnEntrar
             // 
             this.BtnEntrar.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEntrar.Location = new System.Drawing.Point(193, 314);
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(143, 40);
-            this.BtnEntrar.TabIndex = 16;
+            this.BtnEntrar.TabIndex = 3;
             this.BtnEntrar.Text = "Entrar";
             this.BtnEntrar.UseVisualStyleBackColor = true;
             this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
@@ -82,21 +72,21 @@
             this.label5.TabIndex = 15;
             this.label5.Text = "Login";
             // 
-            // textBox2
+            // TxtSenha
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(125, 258);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(275, 26);
-            this.textBox2.TabIndex = 14;
+            this.TxtSenha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSenha.Location = new System.Drawing.Point(125, 258);
+            this.TxtSenha.Name = "TxtSenha";
+            this.TxtSenha.Size = new System.Drawing.Size(275, 26);
+            this.TxtSenha.TabIndex = 2;
             // 
-            // textBox1
+            // TxtUsuario
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(125, 189);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(275, 26);
-            this.textBox1.TabIndex = 13;
+            this.TxtUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtUsuario.Location = new System.Drawing.Point(125, 189);
+            this.TxtUsuario.Name = "TxtUsuario";
+            this.TxtUsuario.Size = new System.Drawing.Size(275, 26);
+            this.TxtUsuario.TabIndex = 1;
             // 
             // label3
             // 
@@ -127,19 +117,30 @@
             this.pictureBox2.TabIndex = 18;
             this.pictureBox2.TabStop = false;
             // 
+            // BtnEsqueciSenha
+            // 
+            this.BtnEsqueciSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(211)))));
+            this.BtnEsqueciSenha.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnEsqueciSenha.Location = new System.Drawing.Point(180, 360);
+            this.BtnEsqueciSenha.Name = "BtnEsqueciSenha";
+            this.BtnEsqueciSenha.Size = new System.Drawing.Size(173, 40);
+            this.BtnEsqueciSenha.TabIndex = 4;
+            this.BtnEsqueciSenha.Text = "Esqueci a senha";
+            this.BtnEsqueciSenha.UseVisualStyleBackColor = false;
+            // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(511, 450);
+            this.Controls.Add(this.BtnEsqueciSenha);
             this.Controls.Add(this.LblVoltar);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.LblEsqueciSenha);
             this.Controls.Add(this.BtnEntrar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtSenha);
+            this.Controls.Add(this.TxtUsuario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -157,12 +158,12 @@
 
         private System.Windows.Forms.Label LblVoltar;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label LblEsqueciSenha;
         private System.Windows.Forms.Button BtnEntrar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtSenha;
+        private System.Windows.Forms.TextBox TxtUsuario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button BtnEsqueciSenha;
     }
 }

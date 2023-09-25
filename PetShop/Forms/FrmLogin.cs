@@ -28,8 +28,11 @@ namespace PetShop.Forms
             ConfigureButton(BtnEntrar);
 
             // Configurar as caixas de texto
-            ConfigureRoundedTextBox(textBox1);
-            ConfigureRoundedTextBox(textBox2);
+            ConfigureRoundedTextBox(TxtUsuario);
+            ConfigureRoundedTextBox(TxtSenha);
+
+            // Configura botão transparente
+            ConfigureButtonTransparent(BtnEsqueciSenha);
         }
 
         private void ConfigureButton(Button button)
@@ -38,6 +41,16 @@ namespace PetShop.Forms
             button.FlatStyle = FlatStyle.Flat;
             button.FlatAppearance.BorderSize = 0;
             button.BackColor = Color.FromArgb(163, 220, 227);
+            button.ForeColor = Color.Black;
+            button.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button.Width, button.Height, 20, 20));
+        }
+
+        private void ConfigureButtonTransparent(Button button)
+        {
+            // "CSS" dos botão
+            button.FlatStyle = FlatStyle.Flat;
+            button.FlatAppearance.BorderSize = 0;
+            button.BackColor = Color.FromArgb(255, 222, 211);
             button.ForeColor = Color.Black;
             button.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, button.Width, button.Height, 20, 20));
         }
@@ -79,11 +92,31 @@ namespace PetShop.Forms
 
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                /** Verifica se os campos estão preenchidos */
+                if(TxtUsuario.Text == "" || TxtSenha.Text == "")
+                {
+                    MessageBox.Show("Preencha os campos", "Atenção", 
+                                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString(), "Erro!", MessageBoxButtons.OK);
+            }
+
+            /**
             CadastroDeClientes frmCadastroDeClientes = new CadastroDeClientes();
             frmCadastroDeClientes.Show();
             this.Hide();
             FrmLogin frmLogin = new FrmLogin();
-            frmLogin.Close();
+            frmLogin.Close(); 
+            */
+
+            
+
         }
     }
 }

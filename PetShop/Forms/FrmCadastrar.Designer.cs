@@ -28,26 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtConfirmarSenha = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.BtnEntrar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtSenha = new System.Windows.Forms.TextBox();
+            this.TxtUsuario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblVoltar = new System.Windows.Forms.Label();
+            this.LblVoltar = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox3
+            // TxtConfirmarSenha
             // 
-            this.textBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(120, 312);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(275, 26);
-            this.textBox3.TabIndex = 25;
+            this.TxtConfirmarSenha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtConfirmarSenha.Location = new System.Drawing.Point(120, 312);
+            this.TxtConfirmarSenha.Name = "TxtConfirmarSenha";
+            this.TxtConfirmarSenha.Size = new System.Drawing.Size(275, 26);
+            this.TxtConfirmarSenha.TabIndex = 3;
             // 
             // label4
             // 
@@ -65,7 +65,7 @@
             this.BtnEntrar.Location = new System.Drawing.Point(188, 353);
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(143, 40);
-            this.BtnEntrar.TabIndex = 23;
+            this.BtnEntrar.TabIndex = 4;
             this.BtnEntrar.Text = "Entrar";
             this.BtnEntrar.UseVisualStyleBackColor = true;
             this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
@@ -80,21 +80,21 @@
             this.label5.TabIndex = 22;
             this.label5.Text = "Cadastro";
             // 
-            // textBox2
+            // TxtSenha
             // 
-            this.textBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(120, 244);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(275, 26);
-            this.textBox2.TabIndex = 21;
+            this.TxtSenha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSenha.Location = new System.Drawing.Point(120, 244);
+            this.TxtSenha.Name = "TxtSenha";
+            this.TxtSenha.Size = new System.Drawing.Size(275, 26);
+            this.TxtSenha.TabIndex = 2;
             // 
-            // textBox1
+            // TxtUsuario
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(120, 175);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(275, 26);
-            this.textBox1.TabIndex = 20;
+            this.TxtUsuario.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtUsuario.Location = new System.Drawing.Point(120, 175);
+            this.TxtUsuario.Name = "TxtUsuario";
+            this.TxtUsuario.Size = new System.Drawing.Size(275, 26);
+            this.TxtUsuario.TabIndex = 1;
             // 
             // label3
             // 
@@ -116,16 +116,16 @@
             this.label2.TabIndex = 18;
             this.label2.Text = "Usuário:";
             // 
-            // lblVoltar
+            // LblVoltar
             // 
-            this.lblVoltar.AutoSize = true;
-            this.lblVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVoltar.Location = new System.Drawing.Point(67, 27);
-            this.lblVoltar.Name = "lblVoltar";
-            this.lblVoltar.Size = new System.Drawing.Size(65, 22);
-            this.lblVoltar.TabIndex = 27;
-            this.lblVoltar.Text = "Voltar";
-            this.lblVoltar.Click += new System.EventHandler(this.lblVoltar_Click);
+            this.LblVoltar.AutoSize = true;
+            this.LblVoltar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblVoltar.Location = new System.Drawing.Point(67, 27);
+            this.LblVoltar.Name = "LblVoltar";
+            this.LblVoltar.Size = new System.Drawing.Size(65, 22);
+            this.LblVoltar.TabIndex = 27;
+            this.LblVoltar.Text = "Voltar";
+            this.LblVoltar.Click += new System.EventHandler(this.lblVoltar_Click);
             // 
             // pictureBox2
             // 
@@ -142,14 +142,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(222)))), ((int)(((byte)(211)))));
             this.ClientSize = new System.Drawing.Size(525, 450);
-            this.Controls.Add(this.lblVoltar);
+            this.Controls.Add(this.LblVoltar);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.TxtConfirmarSenha);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.BtnEntrar);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtSenha);
+            this.Controls.Add(this.TxtUsuario);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -165,15 +165,15 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtConfirmarSenha;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button BtnEntrar;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtSenha;
+        private System.Windows.Forms.TextBox TxtUsuario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblVoltar;
+        private System.Windows.Forms.Label LblVoltar;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
