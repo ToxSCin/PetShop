@@ -108,13 +108,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Captura_de_tela_2023-08-29_140426-removebg-preview.png" />
+    <None Include="Resources\img_botao_redondo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Captura de tela 2023-08-29 141012.png" />
+    <None Include="Resources\img_patas.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Captura de tela 2023-08-29 141611.png" />
+    <None Include="Resources\img_cachorro.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -120,7 +120,7 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::PetShop.Properties.Resources.Captura_de_tela_2023_08_29_141012;
+            this.pictureBox2.Image = global::PetShop.Properties.Resources.img_botao_redondo;
             this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(49, 46);

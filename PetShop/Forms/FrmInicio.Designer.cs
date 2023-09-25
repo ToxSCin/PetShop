@@ -31,8 +31,8 @@
             this.LblFechar = new System.Windows.Forms.Label();
             this.BtnMeCadastrar = new System.Windows.Forms.Button();
             this.BtnFazerLogin = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -73,17 +73,6 @@
             this.BtnFazerLogin.UseVisualStyleBackColor = true;
             this.BtnFazerLogin.Click += new System.EventHandler(this.BtnFazerLogin_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox3.Image = global::PetShop.Properties.Resources.Captura_de_tela_2023_08_29_141611;
-            this.pictureBox3.Location = new System.Drawing.Point(528, 359);
-            this.pictureBox3.MaximumSize = new System.Drawing.Size(1000, 1000);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(265, 142);
-            this.pictureBox3.TabIndex = 11;
-            this.pictureBox3.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -94,9 +83,20 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Bem vindo ao\r\nCapra Rações";
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox3.Image = global::PetShop.Properties.Resources.img_cachorro;
+            this.pictureBox3.Location = new System.Drawing.Point(528, 359);
+            this.pictureBox3.MaximumSize = new System.Drawing.Size(1000, 1000);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(265, 142);
+            this.pictureBox3.TabIndex = 11;
+            this.pictureBox3.TabStop = false;
+            // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::PetShop.Properties.Resources.Captura_de_tela_2023_08_29_141012;
+            this.pictureBox2.Image = global::PetShop.Properties.Resources.img_botao_redondo;
             this.pictureBox2.Location = new System.Drawing.Point(12, 12);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(49, 46);
@@ -106,7 +106,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::PetShop.Properties.Resources.Captura_de_tela_2023_08_29_140426_removebg_preview;
+            this.pictureBox1.Image = global::PetShop.Properties.Resources.img_patas;
             this.pictureBox1.Location = new System.Drawing.Point(588, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(230, 303);
