@@ -63,36 +63,6 @@ namespace PetShop.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Captura_de_tela_2023_08_29_140426_removebg_preview {
-            get {
-                object obj = ResourceManager.GetObject("Captura_de_tela_2023-08-29_140426-removebg-preview", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Captura_de_tela_2023_08_29_141012 {
-            get {
-                object obj = ResourceManager.GetObject("Captura de tela 2023-08-29 141012", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Captura_de_tela_2023_08_29_141611 {
-            get {
-                object obj = ResourceManager.GetObject("Captura de tela 2023-08-29 141611", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap img_botao_redondo {
             get {
                 object obj = ResourceManager.GetObject("img_botao_redondo", resourceCulture);
